@@ -360,21 +360,12 @@ export const constantRoutes = [
   {
     path: '/fcl',
     component: Layout,
-    redirect: '/fcl/qqjg',
-    name: 'fcl',
-    meta: { title: '整柜', icon: 'el-icon-s-help' },
     children: [
       {
-        path: '/fcl/qqjg',
-        name: 'qqjg',
-        component: () => import('@/views/fcl/qqjg/index'),
-        meta: { title: '全球基港', icon: 'table' }
-      },
-      {
-        path: '/fcl/tjxc',
-        name: 'tjxc',
-        component: () => import('@/views/fcl/tjxc/index'),
-        meta: { title: '特价现舱', icon: 'table' }
+        path: '',
+        name: 'fcl',
+        component: () => import('@/views/fcl/index'),
+        meta: { title: '整柜', icon: 'el-icon-s-help' },
       }
     ]
   },
@@ -384,8 +375,8 @@ export const constantRoutes = [
     component: Layout,
     children: [
       {
-        path: 'haipai',
-        name: 'haipai',
+        path: '',
+        name: 'lcl',
         component: () => import('@/views/lcl/index'),
         meta: { title: '拼箱', icon: 'el-icon-s-help' }
       },
@@ -398,7 +389,7 @@ export const constantRoutes = [
     children: [
       {
         path: '',
-        name: '',
+        name: 'kd',
         component: () => import('@/views/kd/index'),
         meta: { title: '快递', icon: 'el-icon-s-help' }
       },
