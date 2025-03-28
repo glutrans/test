@@ -113,19 +113,19 @@ export const constantRoutes = [
         name: 'kongka',
         component: () => import('@/views/euro/kongka/index'),
         meta: { title: '空运卡车派', icon: 'tree' }
-      },
-      {
-        path: 'tiepai',
-        name: 'tiepai',
-        component: () => import('@/views/euro/tiepai/index'),
-        meta: { title: '铁运快递派', icon: 'table' }
-      },
-      {
-        path: 'tieka',
-        name: 'tieka',
-        component: () => import('@/views/euro/tieka/index'),
-        meta: { title: '铁运卡车派', icon: 'tree' }
       }
+      // {
+      //   path: 'tiepai',
+      //   name: 'tiepai',
+      //   component: () => import('@/views/euro/tiepai/index'),
+      //   meta: { title: '铁运快递派', icon: 'table' }
+      // },
+      // {
+      //   path: 'tieka',
+      //   name: 'tieka',
+      //   component: () => import('@/views/euro/tieka/index'),
+      //   meta: { title: '铁运卡车派', icon: 'tree' }
+      // }
     ]
   },
 
@@ -140,26 +140,26 @@ export const constantRoutes = [
         path: 'haipai',
         name: 'haipai',
         component: () => import('@/views/uk/haipai/index'),
-        meta: { title: '海运快递派', icon: 'table' }
+        meta: { title: '海运', icon: 'table' }
       },
-      {
-        path: 'haika',
-        name: 'haika',
-        component: () => import('@/views/uk/haika/index'),
-        meta: { title: '海运卡车派', icon: 'tree' }
-      },
+      // {
+      //   path: 'haika',
+      //   name: 'haika',
+      //   component: () => import('@/views/uk/haika/index'),
+      //   meta: { title: '海运卡车派', icon: 'tree' }
+      // },
       {
         path: 'kongpai',
         name: 'kongpai',
         component: () => import('@/views/uk/kongpai/index'),
-        meta: { title: '空运快递派', icon: 'table' }
-      },
-      {
-        path: 'kongka',
-        name: 'kongka',
-        component: () => import('@/views/uk/kongka/index'),
-        meta: { title: '空运卡车派', icon: 'tree' }
+        meta: { title: '空运', icon: 'table' }
       }
+      // {
+      //   path: 'kongka',
+      //   name: 'kongka',
+      //   component: () => import('@/views/uk/kongka/index'),
+      //   meta: { title: '空运卡车派', icon: 'tree' }
+      // }
     ]
   },
 
