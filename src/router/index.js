@@ -66,19 +66,13 @@ export const constantRoutes = [
         path: 'haipai',
         name: 'haipai',
         component: () => import('@/views/usa/haipai/index'),
-        meta: { title: '海运快递派', icon: 'table' }
-      },
-      {
-        path: 'haika',
-        name: 'haika',
-        component: () => import('@/views/usa/haika/index'),
-        meta: { title: '海运卡车派', icon: 'tree' }
+        meta: { title: '海派', icon: 'icon-sea' }
       },
       {
         path: 'kongpai',
         name: 'kongpai',
         component: () => import('@/views/usa/kongpai/index'),
-        meta: { title: '空运快递派', icon: 'table' }
+        meta: { title: '空派', icon: 'icon-air' }
       }
     ]
   },
@@ -94,38 +88,14 @@ export const constantRoutes = [
         path: 'haipai',
         name: 'haipai',
         component: () => import('@/views/euro/haipai/index'),
-        meta: { title: '海运快递派', icon: 'table' }
-      },
-      {
-        path: 'haika',
-        name: 'haika',
-        component: () => import('@/views/euro/haika/index'),
-        meta: { title: '海运卡车派', icon: 'tree' }
+        meta: { title: '海派', icon: 'icon-sea' }
       },
       {
         path: 'kongpai',
         name: 'kongpai',
         component: () => import('@/views/euro/kongpai/index'),
-        meta: { title: '空运快递派', icon: 'table' }
-      },
-      {
-        path: 'kongka',
-        name: 'kongka',
-        component: () => import('@/views/euro/kongka/index'),
-        meta: { title: '空运卡车派', icon: 'tree' }
+        meta: { title: '空派', icon: 'icon-air' }
       }
-      // {
-      //   path: 'tiepai',
-      //   name: 'tiepai',
-      //   component: () => import('@/views/euro/tiepai/index'),
-      //   meta: { title: '铁运快递派', icon: 'table' }
-      // },
-      // {
-      //   path: 'tieka',
-      //   name: 'tieka',
-      //   component: () => import('@/views/euro/tieka/index'),
-      //   meta: { title: '铁运卡车派', icon: 'tree' }
-      // }
     ]
   },
 
@@ -140,26 +110,14 @@ export const constantRoutes = [
         path: 'haipai',
         name: 'haipai',
         component: () => import('@/views/uk/haipai/index'),
-        meta: { title: '海运', icon: 'table' }
+        meta: { title: '海派', icon: 'icon-sea' }
       },
-      // {
-      //   path: 'haika',
-      //   name: 'haika',
-      //   component: () => import('@/views/uk/haika/index'),
-      //   meta: { title: '海运卡车派', icon: 'tree' }
-      // },
       {
         path: 'kongpai',
         name: 'kongpai',
         component: () => import('@/views/uk/kongpai/index'),
-        meta: { title: '空运', icon: 'table' }
+        meta: { title: '空派', icon: 'icon-air' }
       }
-      // {
-      //   path: 'kongka',
-      //   name: 'kongka',
-      //   component: () => import('@/views/uk/kongka/index'),
-      //   meta: { title: '空运卡车派', icon: 'tree' }
-      // }
     ]
   },
 
@@ -173,13 +131,13 @@ export const constantRoutes = [
         path: 'dubai',
         name: 'dubai',
         component: () => import('@/views/zd/dubai/index'),
-        meta: { title: '迪拜专线', icon: 'table' }
+        meta: { title: '迪拜专线', icon: 'icon-sea' }
       },
       {
         path: 'saudi',
         name: 'saudi',
         component: () => import('@/views/zd/saudi/index'),
-        meta: { title: '沙特专线', icon: 'table' }
+        meta: { title: '沙特专线', icon: 'icon-sea' }
       },
     ]
   },
@@ -194,13 +152,13 @@ export const constantRoutes = [
         path: 'haipai',
         name: 'haipai',
         component: () => import('@/views/au/haipai/index'),
-        meta: { title: '海派专线', icon: 'table' }
+        meta: { title: '海派', icon: 'icon-sea' }
       },
       {
         path: 'kongpai',
         name: 'kongpai',
         component: () => import('@/views/au/kongpai/index'),
-        meta: { title: '空派专线', icon: 'table' }
+        meta: { title: '空派', icon: 'icon-air' }
       },
     ]
   },
@@ -357,44 +315,44 @@ export const constantRoutes = [
     ],
   },
 
-  {
-    path: '/fcl',
-    component: Layout,
-    children: [
-      {
-        path: '',
-        name: 'fcl',
-        component: () => import('@/views/fcl/index'),
-        meta: { title: '整柜', icon: 'el-icon-s-help' },
-      }
-    ]
-  },
+  // {
+  //   path: '/fcl',
+  //   component: Layout,
+  //   children: [
+  //     {
+  //       path: '',
+  //       name: 'fcl',
+  //       component: () => import('@/views/fcl/index'),
+  //       meta: { title: '整柜', icon: 'el-icon-s-help' },
+  //     }
+  //   ]
+  // },
 
-  {
-    path: '/lcl',
-    component: Layout,
-    children: [
-      {
-        path: '',
-        name: 'lcl',
-        component: () => import('@/views/lcl/index'),
-        meta: { title: '拼箱', icon: 'el-icon-s-help' }
-      },
-    ]
-  },
+  // {
+  //   path: '/lcl',
+  //   component: Layout,
+  //   children: [
+  //     {
+  //       path: '',
+  //       name: 'lcl',
+  //       component: () => import('@/views/lcl/index'),
+  //       meta: { title: '拼箱', icon: 'el-icon-s-help' }
+  //     },
+  //   ]
+  // },
 
-  {
-    path: '/kd',
-    component: Layout,
-    children: [
-      {
-        path: '',
-        name: 'kd',
-        component: () => import('@/views/kd/index'),
-        meta: { title: '快递', icon: 'el-icon-s-help' }
-      },
-    ]
-  },
+  // {
+  //   path: '/kd',
+  //   component: Layout,
+  //   children: [
+  //     {
+  //       path: '',
+  //       name: 'kd',
+  //       component: () => import('@/views/kd/index'),
+  //       meta: { title: '快递', icon: 'el-icon-s-help' }
+  //     },
+  //   ]
+  // },
 
   // {
   //   path: '/form',
