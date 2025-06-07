@@ -104,20 +104,20 @@ export const constantRoutes = [
     component: Layout,
     redirect: '/uk/haipai',
     name: 'uk',
-    meta: { title: '英国', icon: 'el-icon-s-help' },
+    // meta: { title: '英国', icon: 'el-icon-s-help' },
     children: [
       {
         path: 'haipai',
         name: 'haipai',
         component: () => import('@/views/uk/haipai/index'),
-        meta: { title: '海派', icon: 'icon-sea' }
+        meta: { title: '英国', icon: 'el-icon-s-help' }
       },
-      {
-        path: 'kongpai',
-        name: 'kongpai',
-        component: () => import('@/views/uk/kongpai/index'),
-        meta: { title: '空派', icon: 'icon-air' }
-      }
+      // {
+      //   path: 'kongpai',
+      //   name: 'kongpai',
+      //   component: () => import('@/views/uk/kongpai/index'),
+      //   meta: { title: '空派', icon: 'icon-air' }
+      // }
     ]
   },
 
