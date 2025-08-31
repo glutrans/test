@@ -66,13 +66,19 @@ export const constantRoutes = [
         path: 'haipai',
         name: 'haipai',
         component: () => import('@/views/usa/haipai/index'),
-        meta: { title: '海派', icon: 'icon-sea' }
+        meta: { title: '海运快递派', icon: 'icon-sea' }
+      },
+      {
+        path: 'haika',
+        name: 'haika',
+        component: () => import('@/views/usa/haika/index'),
+        meta: { title: '海运卡车派', icon: 'icon-sea' }
       },
       {
         path: 'kongpai',
         name: 'kongpai',
         component: () => import('@/views/usa/kongpai/index'),
-        meta: { title: '空派', icon: 'icon-air' }
+        meta: { title: '空运快递派', icon: 'icon-air' }
       }
     ]
   },
@@ -88,13 +94,19 @@ export const constantRoutes = [
         path: 'haipai',
         name: 'haipai',
         component: () => import('@/views/euro/haipai/index'),
-        meta: { title: '海派', icon: 'icon-sea' }
+        meta: { title: '海运快递派', icon: 'icon-sea' }
+      },
+      {
+        path: 'haika',
+        name: 'haika',
+        component: () => import('@/views/euro/haika/index'),
+        meta: { title: '海运卡车派', icon: 'icon-sea' }
       },
       {
         path: 'kongpai',
         name: 'kongpai',
         component: () => import('@/views/euro/kongpai/index'),
-        meta: { title: '空派', icon: 'icon-air' }
+        meta: { title: '空快递派', icon: 'icon-air' }
       }
     ]
   },
