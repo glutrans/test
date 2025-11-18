@@ -106,7 +106,7 @@ export const constantRoutes = [
         path: 'kongpai',
         name: 'kongpai',
         component: () => import('@/views/euro/kongpai/index'),
-        meta: { title: '空快递派', icon: 'icon-air' }
+        meta: { title: '空运快递派', icon: 'icon-air' }
       }
     ]
   },
