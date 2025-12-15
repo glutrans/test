@@ -13,7 +13,8 @@
         </div>
         <el-dropdown-menu slot="dropdown" class="user-dropdown">
           <el-dropdown-item divided @click.native="logout">
-            <img v-if="salesman" style="width: 100px;height: 100px;" src="https://debfc14.webp.li/2025/01/ec66217d0b5b74182ed8737839b05012.jpg" class="user-avatar">
+            <img v-if="salesman==='Liang'" style="width: 100px;height: 100px;" src="https://debfc14.webp.li/2025/01/ec66217d0b5b74182ed8737839b05012.jpg" class="user-avatar">
+            <img v-else-if="salesman==='milson'" style="width: 100px;height: 100px;" src="https://pic.glutran.com/2025/12/9991bf44b59cefe4028f850f5ee87dea.jpg" class="user-avatar">
             <img v-else style="width: 100px;height: 100px;" src="https://debfc14.webp.li/2025/01/126ca639dd7951802447cbed53e03942.jpg" class="user-avatar">
           </el-dropdown-item>
         </el-dropdown-menu>
@@ -85,6 +86,7 @@ export default {
   }
 
   .right-menu {
+    cursor: pointer;
     float: right;
     height: 100%;
     line-height: 50px;
